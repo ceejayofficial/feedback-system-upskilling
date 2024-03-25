@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Jost";
+  src: url("assets/font/static/Jost-Regular.ttf") format("truetype");
+  /* src: url("assets/font/static/Jost-Bold.ttf") format("truetype"); */
+}
+
+body{
+
+  padding: 50px;
+  background-color: #f7f8fd;
+  margin-bottom: 100px;
+  font-family: "Jost";
+
+}

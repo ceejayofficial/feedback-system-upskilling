@@ -1,0 +1,12 @@
+nav{
+  height: 72px;
+  width: 825px;
+  float: right;
+  /* top: -140px; */
+}
+
+button{
+  position: absolute;
+  right: 20px;
+
+}
