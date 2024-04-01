@@ -94,7 +94,7 @@ Increase(index: number){
   console.log(this.CardDetails[index].click);
 
 }
-
+ 
 
 
 
