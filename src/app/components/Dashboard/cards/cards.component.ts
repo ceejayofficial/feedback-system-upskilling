@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 
-interface CardDetails{
+export interface CardDetails{
       id: number,
       click: number,
       head: string,
       paragraph: string,
       btnNumber: string
       comment: number
+
 }
 
 
@@ -23,10 +24,10 @@ interface CardDetails{
 export class CardsComponent {
 
 
-    CardDetails: any[]  = [
+     CardDetails: any[]  = [
 
     {
-      id: 1,
+      id: 0,
       click: 112,
       head: "Add tags for solutions",
       paragraph: "Easier to search for solutions based on a specific stack.",
@@ -35,7 +36,7 @@ export class CardsComponent {
 
     },
     {
-      id: 2,
+      id: 1,
       click: 99,
       head: "Add a dark theme option",
       paragraph: "It would help people with light sensitivities and who prefer dark mode.",
@@ -44,7 +45,7 @@ export class CardsComponent {
 
     },
     {
-      id: 3,
+      id: 2,
       click: 65,
       head: "Q&A within the challenge hubs",
       paragraph: "Challenge-specific Q&A would make for easy reference",
@@ -53,7 +54,7 @@ export class CardsComponent {
 
     },
     {
-      id: 4,
+      id: 3,
       click: 51,
       head: "Allow image/video upload to feedback",
       paragraph: "Images and screencasts can enhance comments on solutions.",
@@ -62,7 +63,7 @@ export class CardsComponent {
 
     },
     {
-      id: 5,
+      id: 4,
       click: 42,
       head: "Ability to follow others",
       paragraph: "Stay updated on comments and solutions other people post.",
@@ -71,22 +72,30 @@ export class CardsComponent {
 
     },
     {
-      id: 6,
+      id: 5,
       click: 3,
       head: "Preview images not loading",
       paragraph: "Challenge preview images are missing when you apply a filter.",
       btnNumber: "Bug",
       comment: 0
 
+
     },
+
+
 
 
   ]
 
 
-Increase($event: MouseEvent) {
-console.log("Increased");
+Increase(index: number){
+
+  this.CardDetails[index].click++;
+  console.log(this.CardDetails[index].click);
+
 }
+
+
 
 
 }
