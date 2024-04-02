@@ -10,35 +10,35 @@
 
   @for (cardOne of cardOne; track cardOne.all) {
 
-<div class="card pt-0 relative   h-44 top-5 left-450 bg-white rounded-lg shadow-sm p-6 mb-10  ">
+<div class="card pt-0 relative text-[13px]  h-44 top-5 left-450 bg-white rounded-lg shadow-sm p-6 mb-10  ">
 
-  <div class="w-3/6 flex space-x-3 ">
+  <div class="w-3/6 flex space-x-3 font-semibold text-[#4661E6] ">
 
-  <div class="card pt-0 relative cursor-pointer h-7 bg-blue-700 text-white w-5 top-5  rounded-lg shadow-sm p-6 mb-10 ">
-<p class="right-5 pr-5  relative pl-3 space-x-4">{{cardOne.all}}</p>
+  <div class="card pt-0 relative cursor-pointer h-7  bg-[#4661E6] text-white w-5 top-5  rounded-lg shadow-sm p-6 mb-10 ">
+<p class="right-5 pr-5  relative pl-3 space-x-4 top-1  font-semibold  ">{{cardOne.all}}</p>
   </div>
-  <div class="card pt-0 relative cursor-pointer  h-7 text-blue-800 w-5 top-5 bg-gray-100   rounded-lg shadow-sm p-6 mb-10 font-medium">
-<p class="right-5 pr-5  relative pl-3">{{cardOne.ui}}</p>
+  <div class="card pt-0 relative cursor-pointer  h-7 w-5 top-5 bg-[#F2F4FF]   rounded-lg shadow-sm p-6 mb-10 font-medium">
+<p class="right-5 pr-5  relative pl-3 top-1 font-semibold">{{cardOne.ui}}</p>
   </div>
-  <div class="card pt-0 relative  cursor-pointer h-7  text-blue-800 bg-gray-100  w-5 top-5  rounded-lg shadow-sm p-6 mb-10 font-medium">
-<p class="right-5 pr-5  relative pl-3">{{cardOne.ux}}</p>
-  </div>
-</div>
-
-<div class="w-10 flex space-x-3 -mt-5 ">
-
-  <div class="card pt-0 relative cursor-pointer h-7 text-blue-800  top-5 bg-gray-100 rounded-lg shadow-sm  mb-10 font-medium">
-<p class="right-5 relative pl-9 ">{{cardOne.enhance}}</p>
-  </div>
-  <div class="card pt-0 relative  h-7 cursor-pointer text-blue-800 bg-gray-100  w-5 top-5  rounded-lg shadow-sm p-6 mb-10 font-medium">
-<p class="right-5 pr-5  relative pl-3">{{cardOne.bug}}</p>
+  <div class="card pt-0 relative  cursor-pointer h-7  bg-[#F2F4FF]  w-5 top-5  rounded-lg shadow-sm p-6 mb-10 font-medium">
+<p class="right-5 pr-5  relative pl-3 top-1 font-semibold">{{cardOne.ux}}</p>
   </div>
 </div>
 
-<div class="w-10 flex space-x-3 -mt-5 ">
+<div class="w-10 flex space-x-3 -mt-5 text-[#4661E6]">
 
-  <div class="card pt-0 relative cursor-pointer h-7 text-blue-800  top-5 bg-gray-100 rounded-lg shadow-sm  mb-10 font-medium">
-<p class="right-5 relative pl-9 ">{{cardOne.feature}}</p>
+  <div class="card pt-1 relative cursor-pointer h-7   top-5 bg-[#F2F4FF] rounded-lg shadow-sm  mb-10 ">
+<p class="right-5 relative pl-9 font-semibold">{{cardOne.enhance}}</p>
+  </div>
+  <div class="card pt-1 relative  h-7 cursor-pointer bg-[#F2F4FF]  w-5 top-5  rounded-lg shadow-sm p-6 mb-10 ">
+<p class="right-5 pr-5  relative pl-3 font-semibold">{{cardOne.bug}}</p>
+  </div>
+</div>
+
+<div class="w-10 flex space-x-3 -mt-5 text-[#4661E6] ">
+
+  <div class="card pt-1 relative cursor-pointer h-7   top-5 bg-[#F2F4FF] rounded-lg shadow-sm  mb-10 ">
+<p class="right-5 relative pl-9 font-semibold">{{cardOne.feature}}</p>
   </div>
 
 </div>
@@ -54,18 +54,18 @@
         <div class="card pt-0 absolute grid  h-7  text-black w-max   ">
       <h3 class="font-bold text-gray-700">{{Roadmap}}</h3>
       <ul>
-        <li class="text-orange-400 list-disc ml-4 mt-4 list"  > {{Planned}}</li>
-        <li class="text-violet-600 list-disc ml-4 mt-1 list"  >{{InProgress}}</li>
-        <li class="text-blue-500 list-disc ml-4 mt-1 list "  >{{live}}</li>
+        <li class="text-orange-400 list-disc ml-4 mt-4 list"  > <p class="text-black">{{Planned}}</p> </li>
+        <li class="text-violet-600 list-disc ml-4 mt-1 list"  > <p class="text-black">{{InProgress}}</p></li>
+        <li class="text-blue-500 list-disc ml-4 mt-1 list "  ><p class="text-black">{{live}}</p></li>
 
       </ul>
     </div>
-        <div class="card pt-0 absolute grid  h-7  text-black w-max left-36 ">
+        <div class="card pt-0 absolute grid  h-7  text-[#647196] w-max left-36 ">
       <h3 class="font-medium text-blue-500  underline ml-0">{{view}}</h3>
       <ul>
-        <p class=" list-disc ml-4 mt-4 font-bold">  {{two}}</p>
-        <p class="list-disc ml-4 mt-1 font-bold">  {{three}}</p>
-        <p class=" list-disc ml-4 mt-1 font-bold">  {{one}}</p>
+        <p class=" list-disc ml-4 mt-4 font-bold text-[16px]">  {{two}}</p>
+        <p class="list-disc ml-4 mt-1 font-bold text-[16px]">  {{three}}</p>
+        <p class=" list-disc ml-4 mt-1 font-bold text-[16px]">  {{one}}</p>
 
       </ul>
     </div>
