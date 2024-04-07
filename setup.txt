@@ -1,3 +1,4 @@
+
 npm install -g  @angular/cli
 ng new feedback-system-upskilling
 
@@ -21,5 +22,20 @@ git commit -m "Your commit message here"
 
 git push origin main
 444
+
+
+
+
+git checkout main
+git checkout develop
+git merge main
+git push origin develop
+
+
+
+
+
+
+
 
 

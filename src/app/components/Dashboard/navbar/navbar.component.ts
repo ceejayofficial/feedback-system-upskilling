@@ -9,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
+ suggestions = '6 Suggestions'
+
+
+
+
+
 }
