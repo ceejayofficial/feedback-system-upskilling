@@ -36,13 +36,8 @@ import {
   provideProtractorTestingSupport,
   withHttpTransferCacheOptions,
   withNoHttpTransferCache
-<<<<<<< HEAD
-} from "./chunk-M4ZUYVP3.js";
-import "./chunk-KJBDP7EP.js";
-=======
 } from "./chunk-QPF4MGJQ.js";
 import "./chunk-HHW4LUNY.js";
->>>>>>> main
 export {
   BrowserModule,
   By,
