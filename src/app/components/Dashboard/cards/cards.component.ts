@@ -88,9 +88,12 @@ export class CardsComponent {
   ]
 
 
-Increase($event: MouseEvent) {
-console.log("Increased");
-}
+  increaseNumber(index: number){
+
+    this.CardDetails[index].click++;
+    console.log(this.CardDetails[index].click);
+
+  }
 
 
 }
