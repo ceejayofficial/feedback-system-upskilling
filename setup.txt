@@ -32,3 +32,8 @@ fix/FB-dashboard - Fixing Grounds
 git add .
 git commit -m " tailwind config (typography and colors updated)"
 git push origin feat/FB-roadmap
+
+
+git checkout fix/FB-dashboard
+git merge feat/FB-roadmap
+
