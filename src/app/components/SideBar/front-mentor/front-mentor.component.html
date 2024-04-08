@@ -1,83 +1,73 @@
-<div class="card pt-12  absolute h-151 top-0 left-24">
-  <div class="leading-21">
+<div class="card pt-12 absolute h-151 top-0 left-24 text-Jost">
+  <div class="leading-21 ">
     <div>
-      <p class="absolute pl-6 mt-14 pb-3 text-white text-x font-black">{{Frontend}}</p>
-      <p class="absolute pl-6 mt-20 left-0 pb-3 text-white text-sm font-normal opacity-75">{{FeedbackBoard}}</p>
+      <p class="absolute pl-6 mt-14 pb-3 text-white text-x caret-font-bold text-sidebar-first-head-text text-20 font-bold">{{ Frontend }}</p>
+      <p class="absolute pl-6 mt-20 left-0 pb-3 text-white text-sm caret-font-normal opacity-75  text-sidebar-first-para-text">{{ FeedbackBoard }}</p>
     </div>
-
-    <img src="assets/fe.png" alt="" srcset="" class="w-">
+    <img src="assets/fe.png" alt="" srcset="" class="">
   </div>
 
   @for (cardOne of cardOne; track cardOne.all) {
+    <div class="card pt-0 relative text-13 h-44 top-5 left-450 bg-white rounded-lg shadow-sm p-6 mb-10 bg-sidebar-second-bg text-sidebar-second-text font-semiBold">
 
-<div class="card pt-0 relative text-[13px]  h-44 top-5 left-450 bg-white rounded-lg shadow-sm p-6 mb-10  ">
+      <div class="w-3/6 flex space-x-3 caret-font-semibold ">
 
-  <div class="w-3/6 flex space-x-3 font-semibold text-[#4661E6] ">
+        <div class="card pt-0 relative cursor-pointer h-7 bg-sidebar-second-All-btn-bg text-sidebar-second-All-text text-white w-5 top-5 rounded-lg shadow-sm p-6 mb-10">
+          <p class="right-5 pr-5 relative pl-3 space-x-4 top-1 caret-font-semibold">{{ cardOne.all }}</p>
+        </div>
+        <div class="card pt-0 relative cursor-pointer h-7 w-5 top-5 bg-[#F2F4FF] rounded-lg shadow-sm p-6 mb-10 caret-font-medium">
+          <p class="right-5 pr-5 relative pl-3 top-1 caret-font-semibold">{{ cardOne.ui }}</p>
+        </div>
+        <div class="card pt-0 relative cursor-pointer h-7 bg-[#F2F4FF] w-5 top-5 rounded-lg shadow-sm p-6 mb-10 caret-font-medium">
+          <p class="right-5 pr-5 relative pl-3 top-1 caret-font-semibold">{{ cardOne.ux }}</p>
+        </div>
+      </div>
 
-  <div class="card pt-0 relative cursor-pointer h-7  bg-[#4661E6] text-white w-5 top-5  rounded-lg shadow-sm p-6 mb-10 ">
-<p class="right-5 pr-5  relative pl-3 space-x-4 top-1  font-semibold  ">{{cardOne.all}}</p>
-  </div>
-  <div class="card pt-0 relative cursor-pointer  h-7 w-5 top-5 bg-[#F2F4FF]   rounded-lg shadow-sm p-6 mb-10 font-medium">
-<p class="right-5 pr-5  relative pl-3 top-1 font-semibold">{{cardOne.ui}}</p>
-  </div>
-  <div class="card pt-0 relative  cursor-pointer h-7  bg-[#F2F4FF]  w-5 top-5  rounded-lg shadow-sm p-6 mb-10 font-medium">
-<p class="right-5 pr-5  relative pl-3 top-1 font-semibold">{{cardOne.ux}}</p>
-  </div>
-</div>
+      <div class="w-10 flex space-x-3 -mt-5 text-[#4661E6]">
 
-<div class="w-10 flex space-x-3 -mt-5 text-[#4661E6]">
+        <div class="card pt-1 relative cursor-pointer h-7 top-5 bg-[#F2F4FF] rounded-lg shadow-sm mb-10 caret-font-semibold">
+          <p class="right-5 relative pl-9 caret-font-semibold">{{ cardOne.enhance }}</p>
+        </div>
+        <div class="card pt-1 relative h-7 cursor-pointer bg-[#F2F4FF] w-5 top-5 rounded-lg shadow-sm p-6 mb-10">
+          <p class="right-5 pr-5 relative pl-3 caret-font-semibold">{{ cardOne.bug }}</p>
+        </div>
+      </div>
 
-  <div class="card pt-1 relative cursor-pointer h-7   top-5 bg-[#F2F4FF] rounded-lg shadow-sm  mb-10 ">
-<p class="right-5 relative pl-9 font-semibold">{{cardOne.enhance}}</p>
-  </div>
-  <div class="card pt-1 relative  h-7 cursor-pointer bg-[#F2F4FF]  w-5 top-5  rounded-lg shadow-sm p-6 mb-10 ">
-<p class="right-5 pr-5  relative pl-3 font-semibold">{{cardOne.bug}}</p>
-  </div>
-</div>
+      <div class="w-10 flex space-x-3 -mt-5 text-[#4661E6] ">
 
-<div class="w-10 flex space-x-3 -mt-5 text-[#4661E6] ">
+        <div class="card pt-1 relative cursor-pointer h-7 top-5 bg-[#F2F4FF] rounded-lg shadow-sm mb-10 caret-font-semibold">
+          <p class="right-5 relative pl-9 caret-font-semibold">{{ cardOne.feature }}</p>
+        </div>
 
-  <div class="card pt-1 relative cursor-pointer h-7   top-5 bg-[#F2F4FF] rounded-lg shadow-sm  mb-10 ">
-<p class="right-5 relative pl-9 font-semibold">{{cardOne.feature}}</p>
-  </div>
+      </div>
+    </div>
+  }
 
-</div>
-
-
-</div>
-}
-
-<div class="card pt-0 relative  h-44 top-0 left-450 bg-white rounded-lg shadow-sm p-6 mb-10 flex space-x-5">
-
-
+  <div class="card pt-0 relative h-44 top-0 left-450 bg-white rounded-lg shadow-sm p-6 mb-10 flex space-x-5 bg-sidebar-third-bg">
     <div class="space-x-14 pt-5 ">
-        <div class="card pt-0 absolute grid  h-7  text-black w-max   ">
-      <h3 class="font-bold text-gray-700">{{Roadmap}}</h3>
-      <ul>
-        <li class="text-orange-400 list-disc ml-4 mt-4 list"  > <p class="text-black">{{Planned}}</p> </li>
-        <li class="text-violet-600 list-disc ml-4 mt-1 list"  > <p class="text-black">{{InProgress}}</p></li>
-        <li class="text-blue-500 list-disc ml-4 mt-1 list "  ><p class="text-black">{{live}}</p></li>
-
-      </ul>
+      <div class="card pt-0 absolute grid h-7 text-black w-max text-sidebar-third-roadmap-text">
+        <h3 class="font-bold text-gray-700">{{ Roadmap }}</h3>
+        <ul>
+          <li class="text-sidebar-planned-bg list-disc  ml-4 mt-4 list bg-sidebar-third-planned-bg ">
+            <p class="text-black text-sidebar-third-PlanProgLive-text ">{{ Planned }}</p>
+          </li>
+          <li class="list-disc ml-4 mt-1 list text-sidebar-in-progress ">
+            <p class="text-sidebar-third-PlanProgLive-text">{{ InProgress }}</p>
+          </li>
+          <li class="text-blue-500 list-disc ml-4 mt-1 list text-sidebar-live">
+            <p class="text-black  text-sidebar-third-PlanProgLive-text">{{ live }}</p>
+          </li>
+        </ul>
+      </div>
+      <div class="card pt-0 absolute grid h-7 text-[#647196] w-max left-36">
+        <h3 class=" text-blue-500 underline ml-0 text-sidebar-third-view-text font-semiBold cursor-pointer">{{ view }}</h3>
+        <ul>
+          <p class="list-disc ml-4 mt-4 caret-font-bold text-sidebar-third-numbers-text text-16 font-bold">{{ two }}</p>
+          <p class="list-disc ml-4 mt-1 caret-font-bold text-sidebar-third-numbers-text text-16 font-bold">{{ three }}</p>
+          <p class="list-disc ml-4 mt-1 caret-font-bold text-sidebar-third-numbers-text text-16 font-bold" >{{ one }}</p>
+        </ul>
+      </div>
     </div>
-        <div class="card pt-0 absolute grid  h-7  text-[#647196] w-max left-36 ">
-      <h3 class="font-medium text-blue-500  underline ml-0">{{view}}</h3>
-      <ul>
-        <p class=" list-disc ml-4 mt-4 font-bold text-[16px]">  {{two}}</p>
-        <p class="list-disc ml-4 mt-1 font-bold text-[16px]">  {{three}}</p>
-        <p class=" list-disc ml-4 mt-1 font-bold text-[16px]">  {{one}}</p>
-
-      </ul>
-    </div>
-
-    </div>
-
-
-
-  <div class="card pt-0 relative flex space-x-24  h-7  text-black w-5 top-5 left-0  ">
-
+    <div class="card pt-0 relative flex space-x-24 h-7 text-black w-5 top-5 left-0"></div>
   </div>
-
-
-</div>
 </div>

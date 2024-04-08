@@ -88,13 +88,16 @@ export class CardsComponent {
   ]
 
 
+
   increaseNumber(index: number ){
 
-    this.CardDetails[index].click++;
-    
+    const change = this.CardDetails[index].click++;
     console.log(this.CardDetails[index].click);
 
+
+
   }
+
 
 
 }

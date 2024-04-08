@@ -1,24 +1,20 @@
-<nav class="absolute left-96 rounded-xl  ">
-  <div class="absolute inset-0 bg-blue-800 pt-4  rounded-xl  " style="background-color: #373F68;   ">
+<nav class="absolute left-96 rounded-xl">
+  <div class="absolute inset-0 bg-nav-bg pt-4 rounded-xl" style="background-color: #373F68;">
 
-    <div class="inline-flex ml-10 text-white space-x-8 py-2">
+    <div class="inline-flex ml-10 text-navbar-text space-x-8 py-2">
       <div class="py-0">
-        <img src="assets/light.svg" alt="" srcset="" class="w-5 ml-0 top-5 ">
+        <img src="assets/light.svg" alt="" srcset="" class="w-5 ml-0 top-5">
       </div>
-      <h4 class="font-bold relative right-4">{{suggestions}}</h4>
+      <h4 class="font-bold relative right-4 text-18">{{ suggestions }}</h4>
 
-      <div class="font-bold">
-        <span class="font-normal"> Sort by </span>: Most Upvotes
-
+      <div class="font-bold text-14 mt-1">
+        <span class="font-regular">Sort by :</span>  Most Upvotes
       </div>
-      <img src="assets/top.svg" alt="" srcset="" class="relative  w-5 ml-5 top-0 right-6 cursor-pointer rotate-180">
-
+      <img src="assets/top.svg" alt="" srcset="" class="relative w-4 ml-5 top-1 right-6 cursor-pointer rotate-180">
     </div>
 
-    <button class="w-158 h-10 right rounded-lg text-white pl-5 pr-5 bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2">
-  + Add Feedback
-  </button>
+    <button class="w-158 bg-navbar-btn-bg font-bold text-14 h-10 rounded-lg text pl-5 pr-5  text-navbar-btn-color">
+      + Add Feedback
+    </button>
   </div>
-
-
 </nav>
