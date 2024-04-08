@@ -6,7 +6,8 @@ export interface CardDetails{
       head: string,
       paragraph: string,
       btnNumber: string
-      comment: number
+      comment: number,
+
 
 }
 
@@ -89,14 +90,58 @@ export class CardsComponent {
 
 
 
-  increaseNumber(index: number ){
+  // increaseNumber(index: number ){
 
-    const change = this.CardDetails[index].click++;
+  //   const change = this.CardDetails[index].click++;
+  //   console.log(this.CardDetails[index].click);
+
+
+
+  // }
+
+//   increaseNumber(index: number) {
+//     // Toggle the value between true and false
+//     this.CardDetails[index].click++ = !this.CardDetails[index].click--;
+//     console.log(this.CardDetails[index].click);
+// }
+
+isTapped = true;
+
+increaseNumber(index: number) {
+
+    this.isTapped = !this.isTapped;
+
+    if (this.isTapped) {
+        this.CardDetails[index].click--;
+    } else {
+        this.CardDetails[index].click++;
+    }
+
     console.log(this.CardDetails[index].click);
+}
 
 
+// increaseNumber(index: number) {
+//   // Retrieve the stored value of isTapped from local storage or default to true
+//   const storedIsTapped = localStorage.getItem('isTapped');
+//   this.isTapped = storedIsTapped ? JSON.parse(storedIsTapped) : true;
 
-  }
+//   // Toggle the value of isTapped
+//   this.isTapped = !this.isTapped;
+
+//   // Store the updated value of isTapped in local storage
+//   localStorage.setItem('isTapped', JSON.stringify(this.isTapped));
+
+//   // Update the click value based on the value of isTapped
+//   if (this.isTapped) {
+//       this.CardDetails[index].click--;
+//   } else {
+//       this.CardDetails[index].click++;
+//   }
+
+//   console.log(this.CardDetails[index].click);
+// }
+
 
 
 
